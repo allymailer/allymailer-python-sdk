@@ -16,7 +16,7 @@ from .api.system import SystemApi
 from .api.obsolete import ObsoleteApi
 
 __all__ = ["client", "AllyMailerClient", "ApiClient", "ApiError", "Configuration", "Transport", "UrllibTransport"]
-__version__ = "1.1.1"
+__version__ = "1.1.2"
 
 
 class AllyMailerClient:
