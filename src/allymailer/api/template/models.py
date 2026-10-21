@@ -67,7 +67,7 @@ class TemplateObject:
     """
 
     template_engine: Optional[TemplateEngine] = None
-    """Параметр для вибору [шаблонізатора](https://docs.allymailer.com.ua/en/template-engines) — або
+    """Параметр для вибору [шаблонізатора](https://docs.allymailer.com.ua/ua/template-engines) — або
     "simple", або "velocity", або "liquid", або "none". За замовчуванням — "simple".
     """
 
@@ -368,7 +368,7 @@ class TemplateListObject:
     """
 
     template_engine: Optional[TemplateEngine] = None
-    """Параметр для вибору [шаблонізатора](https://docs.allymailer.com.ua/en/template-engines) — або
+    """Параметр для вибору [шаблонізатора](https://docs.allymailer.com.ua/ua/template-engines) — або
     "simple", або "velocity", або "liquid", або "none". За замовчуванням — "simple".
     """
 

@@ -16,7 +16,7 @@ from .api.system import SystemApi
 from .api.obsolete import ObsoleteApi
 
 __all__ = ["client", "AllyMailerClient", "ApiClient", "ApiError", "Configuration", "Transport", "UrllibTransport"]
-__version__ = "1.0.0"
+__version__ = "1.1.1"
 
 
 class AllyMailerClient:
@@ -58,7 +58,7 @@ class AllyMailerClient:
         """Ви можете зберегти шаблон на боці AllyMailer і потім посилатися на нього за ідентифікатором. Це не
         обов'язково, але вкрай рекомендовано у разі повторюваних email-повідомлень або за великих обсягів
         надсилання. AllyMailer підтримує два різні синтаксиси для шаблонів, докладніше читайте
-        [тут](https://docs.allymailer.com.ua/en/template-engines).
+        [тут](https://docs.allymailer.com.ua/ua/template-engines).
         """
         self.webhook = WebhookApi(self.api_client)
         """AllyMailer дозволяє вам отримувати сповіщення про зміну статусу доставки листа або спам-блокування.

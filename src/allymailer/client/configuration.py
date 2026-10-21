@@ -29,7 +29,7 @@ class Configuration:
     timeout: float = 30.0
     """Request timeout in seconds."""
 
-    user_agent: str = "allymailer-python-sdk/1.0.0"
+    user_agent: str = "allymailer-python-sdk/1.1.1"
 
     platform: Optional[str] = None
     """Package that uses the SDK and its version, e.g. "django.1.0.0": goes to the "platform" query parameter before the SDK one

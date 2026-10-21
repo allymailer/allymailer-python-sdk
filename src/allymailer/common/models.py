@@ -11,7 +11,7 @@ __all__ = ["TemplateEngine", "EmailStatus", "VerificationRecordStatus", "EmailCo
 
 
 class TemplateEngine(str, Enum):
-    """Параметр для вибору [шаблонізатора](https://docs.allymailer.com.ua/en/template-engines) — або
+    """Параметр для вибору [шаблонізатора](https://docs.allymailer.com.ua/ua/template-engines) — або
     "simple", або "velocity", або "liquid", або "none". За замовчуванням — "simple".
     """
 
@@ -94,6 +94,16 @@ class BodyObject:
             "amp": self.amp,
         }
         return {k: v for k, v in result.items() if v is not None}
+
+    @classmethod
+    def from_html(cls, html: str, plaintext: Optional[str] = None) -> BodyObject:
+        """An HTML body, with an optional plain-text part."""
+        return cls(html=html, plaintext=plaintext)
+
+    @classmethod
+    def from_text(cls, plaintext: str) -> BodyObject:
+        """A plain-text body."""
+        return cls(plaintext=plaintext)
 
 
 @dataclass
